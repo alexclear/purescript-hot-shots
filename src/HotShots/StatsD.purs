@@ -1,17 +1,24 @@
 module HotShots.StatsD
-       ( increment
+       ( StatsdClient
+       , increment
        , gauge
+       , createStatsdClient
        , timing
        ) where
 
 import Data.Unit (Unit)
 import Effect (Effect)
 
+foreign import data StatsdClient :: Type
+
+foreign import createStatsdClient
+  :: String -> Int -> Effect StatsdClient
+
 foreign import increment
-  :: String -> Int -> String -> Effect Unit
+  :: StatsdClient -> String -> Effect Unit
 
 foreign import gauge
-  :: String -> Int -> String -> Number -> Effect Unit
+  :: StatsdClient -> String -> Number -> Effect Unit
 
 foreign import timing
-  :: String -> Int -> String -> Int -> Effect Unit
+  :: StatsdClient -> String -> Int -> Effect Unit
