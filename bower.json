@@ -1,0 +1,33 @@
+{
+  "name": "purescript-hot-shots",
+  "homepage": "https://github.com/alexclear/purescript-hot-shots",
+  "description": "A PureScript wrapper for hot-shots (Node.js StatsD client) library",
+  "license": "MIT",
+  "keywords": [
+    "purescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexclear/purescript-hot-shots.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output",
+    "test",
+    "example",
+    "Gruntfile.js",
+    "package.json",
+    "bower.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "purescript-effect": "^2.0.0",
+    "purescript-foreign": "^5.0.0",
+    "purescript-foreign-generic": "^7.0.0",
+  },
+  "devDependencies": {
+    "purescript-test-unit": "^14.0.0"
+  }
+}
