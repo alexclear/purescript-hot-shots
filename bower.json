@@ -25,7 +25,7 @@
   "dependencies": {
     "purescript-effect": "^2.0.0",
     "purescript-foreign": "^5.0.0",
-    "purescript-foreign-generic": "^7.0.0",
+    "purescript-foreign-generic": "^7.0.0"
   },
   "devDependencies": {
     "purescript-test-unit": "^14.0.0"
